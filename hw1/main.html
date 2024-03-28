@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale:1.0">
+        <title>主页</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <link rel="stylesheet" href="./style.css">
+        
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-content"> 
+                <a href="#" class="header-content-title">
+                    BJTU
+                    <!-- <img src="./assets/touxiang.png" alt="头像" class="circle-image-small"> -->
+                </a>
+                <ul class="header-content-ul">
+                    <li> <a href="#home" class="hover-blue">home</a></li>
+                    <li> <a href="#education" class="hover-blue">education</a></li>
+                    <li> <a href="#project" class="hover-blue">project</a></li>
+                    <li> <a href="#acm" class="hover-blue">acm</a></li>
+                    <li> <a href="#contact" class="hover-blue">contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="siderbar">
+                <div style="height:100vh"></div>
+                <div class="siderbar-backup">
+                    <a href="#" class="hyperlink">
+                    <img src="./assets/backup.png" alt="back up" width="100%">
+                    <span style="position: relative; top:-15px; text-decoration: none;">UP</span></a>
+                </div>
+            </div>
+            <div class="content">
+                <section id="home" >
+                    <div class="content-split">
+                        <div class="content-left">
+                            <div class="avatar">
+                                <img src="./assets/touxiang.png" alt="头像" class="circle-image">
+                            </div>
+                            <h2>邓人嘉</h2>
+                            <p style="color: #0000008A;">Undergraduate of Software Engneering</p>
+                            
+                                <a href="https://www.bjtu.edu.cn/" class="hyperlink"><span>Beijing Jiaotong University</span></a>
+                            <ul class="horizental-icons">
+                                <li><a href="#contact" class="hyperlink"><svg t="1711470571361" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7340" width="42" height="42"><path d="M513.92 537.216L99.968 278.592v96.96L513.92 637.44v-0.32l412.48-265.664V277.12L513.92 537.216zM0 128h1024v768H0V128z" fill="#2962FF" p-id="7341"></path></svg></a></li>
+                                <li><a href="https://github.com/lovekdl" class="hyperlink"><svg t="1711469880748" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3411" width="42" height="42"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9 23.5 23.2 38.1 55.4 38.1 91v112.5c0.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z" p-id="3412" fill="#2962FF"></path></svg></a></li>
+                                <li><a href="https://space.bilibili.com/99798809" class="hyperlink"><svg t="1711470489459" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5364" width="42" height="42"><path d="M306.005333 117.632L444.330667 256h135.296l138.368-138.325333a42.666667 42.666667 0 0 1 60.373333 60.373333L700.330667 256H789.333333A149.333333 149.333333 0 0 1 938.666667 405.333333v341.333334a149.333333 149.333333 0 0 1-149.333334 149.333333h-554.666666A149.333333 149.333333 0 0 1 85.333333 746.666667v-341.333334A149.333333 149.333333 0 0 1 234.666667 256h88.96L245.632 177.962667a42.666667 42.666667 0 0 1 60.373333-60.373334zM789.333333 341.333333h-554.666666a64 64 0 0 0-63.701334 57.856L170.666667 405.333333v341.333334a64 64 0 0 0 57.856 63.701333L234.666667 810.666667h554.666666a64 64 0 0 0 63.701334-57.856L853.333333 746.666667v-341.333334A64 64 0 0 0 789.333333 341.333333zM341.333333 469.333333a42.666667 42.666667 0 0 1 42.666667 42.666667v85.333333a42.666667 42.666667 0 0 1-85.333333 0v-85.333333a42.666667 42.666667 0 0 1 42.666666-42.666667z m341.333334 0a42.666667 42.666667 0 0 1 42.666666 42.666667v85.333333a42.666667 42.666667 0 0 1-85.333333 0v-85.333333a42.666667 42.666667 0 0 1 42.666667-42.666667z" p-id="5365" fill="#2962FF"></path></svg></a></li>
+                                
+                            </ul>
+                            
+                        </div>
+                        <div class="content-right">
+                            <h1>Biography</h1>
+                            <div class="introduction">
+                            
+                                <p>I am currently pursuing my bachelor's degree in Software Engneering at Software School,<a href="https://www.bjtu.edu.cn/" class="hyperlink"> <span>Beijing Jiaotong University.</span></a></p>
+                                    
+                                <p> Additionally, I am an intern student at the <a href="https://github.com/cocacola-lab" class="hyperlink"> <span>Cognition and Language Lab</span></a>, Beijing Jiaotong University, under the mentorship of <a href="http://faculty.bjtu.edu.cn/9954/" class="hyperlink"> <span>Prof. Han Wenjuan.</span></a>
+                               <p>My research interests focus on Machine Learning and Multi-Agent Learning.</p>
+                               <p>Besides, I enjoy playing video games, such as Apex, CS2, Honkai Star Rail and so on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                    
+                <section id="education" >
+                    <div class="content-split content-split-even">
+                        <div class="content-left">
+                            <h2 class="even-sticky hidden-in-phone">Education</h2>
+                        </div>
+                        <div class="content-right">
+                            <h1>Educational experiences</h1>
+                            <div class="introduction">
+                            
+                                <p><svg t="1711525266997" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4456" width="25" height="25"><path d="M918.4 393.6l73.6-35.2-467.2-204.8-492.8 214.4 492.8 211.2 332.8-156.8v112l-64 60.8 99.2 89.6 99.2-89.6-73.6-64zM777.6 483.2z" p-id="4457" fill="#2962FF"></path><path d="M777.6 528c-3.2 32-121.6 99.2-265.6 99.2-147.2 0-265.6-67.2-265.6-96v288c9.6 28.8 124.8 54.4 265.6 54.4s256-22.4 265.6-54.4v-291.2zM249.6 486.4c0-3.2 0-3.2 0 0z" p-id="4458" fill="#2962FF"></path></svg>  Undergraduate, <a href="https://www.bjtu.edu.cn/" class="hyperlink"><span>Beijing Jiaotong University</span></a>.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="project">
+                    <div class="content-split">
+                        <div class="content-left">
+                            <h2 class="odd-sticky hidden-in-phone">Project</h2>
+                        </div>
+                        <div class="content-right">
+                            <h1>My projects</h1>
+                            <div class="introduction">
+                            
+                                <h3>Simulating Large-Scale Multi-Agent Interactions with Limited Multimodal Senses and Physical Needs.</h3>
+                                <img src="./assets/project.jpg" alt="project" width="80%" class="project">
+
+                                <ul  style="width: 100%; margin: 0; padding: 30;">
+                                    <a href="https://github.com/cocacola-lab/MC" class="hyperlink" style="padding-right: 50px;"><span>code</span></a>
+                                    <a href="#contact" class="hyperlink"><span>paper</span></a>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="acm" >
+                    <div class="content-split content-split-even">
+                        <div class="content-left">
+                            <h2 class="even-sticky hidden-in-phone">ACM <br/>competitions</h2>
+                        </div>
+                        <div class="content-right">
+                            <h1>ICPC & CCPC</h1>
+                            <div class="introduction">
+                                <p>Here are my medals in programming contests.</p>
+                                <table>
+                                    <tr>
+                                      <th>Contest</th>
+                                      <th>Medal</th>
+                                    </tr>
+                                    <tr>
+                                    <td>ICPC 2023 Asia Regional Nanjing Site</td>
+                                        <td>Gold</td>
+                                    </tr>
+                                    <tr>
+                                    <td>ICPC 2023 Asia Regional Xi'an Site</td>
+                                    <td>Gold</td>
+                                    </tr>
+                                    <tr>
+                                    <td>CCPC 2023 Asia Regional Qinhuangdao Site</td>
+                                    <td>Gold</td>
+                                    </tr>
+                                    <tr>
+                                      <td>ICPC 2022 Asia Regional Jinan Site</td>
+                                      <td>Silver</td>
+                                    </tr>
+                                    <tr>
+                                      <td>ICPC 2022 Asia Regional Xi'an Site</td>
+                                      <td>Silver</td>
+                                    </tr>
+                                    <tr>
+                                    <td>CCPC 2022 Asia Regional Mianyang Site</td>
+                                        <td>Silver</td>
+                                      </tr>
+                                    <tr> 
+                                    <td>CCPC 2022 Asia Regional Guilin Site</td>
+                                    <td>Silver</td>
+                                    </tr>
+                                  </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="contact">
+                    <div class="content-split">
+                        <div class="content-left">
+                            <h2 class="odd-sticky hidden-in-phone">Contact</h2>
+                        </div>
+                        <div class="content-right">
+                            <h1>Contact me if needed.</h1>
+                            <div >
+                                <div style="display: flex; align-items: center;">
+                                    <svg t="1711554972394" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4031" width="45" height="45"><path d="M901.557832 195.910948 122.431935 195.910948c-33.127492 0-60.042491 26.900673-60.042491 60.065004l0 509.325078c0 33.221636 26.885324 60.065004 60.042491 60.065004l779.125897 0c33.135678 0 60.051701-26.901697 60.051701-60.065004L961.609533 255.975952C961.609533 222.75227 934.724209 195.910948 901.557832 195.910948zM796.517497 410.939303l-268.550339 155.051355c-4.15667 3.541663-9.485025 5.41636-14.886035 5.328355-5.399987 0.088004-10.726296-1.786693-14.883989-5.328355l-268.551362-155.051355c-10.765181-6.205329-14.497179-19.875676-8.246825-30.706349 6.212492-10.742668 19.897166-14.488992 30.727839-8.225335l260.954337 150.661372 260.956384-150.661372c10.829649-6.263657 24.514323-2.517333 30.720675 8.225335C811.021839 391.063627 807.275515 404.733974 796.517497 410.939303z" fill="#000000" p-id="4032"></path></svg>
+                                    <a href="mailto:21301032@bjtu.edu.cn" class="hyperlink"><span style="font-size: 26px; margin-left: 20px;">21301032@bjtu.edu.cn</span></a>
+                                </div>
+                                <div style="display: flex; align-items: center;">
+                                    <svg t="1711555340506" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5156" width="45" height="45"><path d="M616.3 664.3l-39.2 28.8s-39.3 18.3-86.3-23.5c-47.1-41.9-130.7-137.5-154.2-192.3-23.5-54.9 23.5-78.4 23.5-78.4s61.5-51 64-60.1c2.6-9.2 36.6-45.7-36.6-143.8-73.2-98-90.2-78.4-129.4-48.4-39.2 30-94.2 88.9-105.9 156.9-11.8 68-19.6 151.6 79.8 300.7S481.7 867 565.3 885.3c83.8 18.3 142.6 30 226.1-37.9 83.7-68 98.2-74.5 60.2-122.9-37.9-48.4-121.3-106.4-133.8-108.8-12.4-2.5-30.4-6.7-58.5 14.2-28.2 20.8-43 34.4-43 34.4" p-id="5157" fill="#000000"></path></svg>
+                                    <a href="tel:+8613187196880" class="hyperlink"><span style="font-size: 26px; margin-left: 20px;">+86 13187196880</span></a>
+                                </div>
+                                
+                                <div id="mapid" style="width: 600px; height: 400px; "></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <p>Hello, I am the footer. No Copyright.</p>
+        </div>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script>
+            
+            var pos = [39.950476697839584, 116.33629070065306];
+
+            var mymap = L.map('mapid').setView(pos, 16);
+
+            // 加载并显示OpenStreetMap的瓦片图层
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(mymap);
+            L.marker(pos).addTo(mymap).bindPopup('特定的位置').openPopup();
+        </script>
+    </body>
+</html>
